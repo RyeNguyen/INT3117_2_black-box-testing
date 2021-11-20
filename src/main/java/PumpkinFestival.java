@@ -2,7 +2,7 @@ public class PumpkinFestival {
     public String calculatePrize(int age, int pumpkinsCarved) {
         if (checkLessThanZero(age) || (checkLessThanZero(pumpkinsCarved))) return "Đầu vào không hợp lệ";
 
-        if (!checkTooYoung(age)) return "Chưa đủ tuổi";
+        if (checkTooYoung(age)) return "Chưa đủ tuổi";
 
         if (pumpkinsCarved == 0) return "Không có kẹo";
 
@@ -33,6 +33,6 @@ public class PumpkinFestival {
 
     //Kiểm tra trẻ nhỏ có được dự thi hay không
     private boolean checkTooYoung(int age) {
-        return age >= 5;
+        return age < 5;
     }
 }
