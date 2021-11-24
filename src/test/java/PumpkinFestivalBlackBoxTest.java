@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class PumpkinFestivalTest {
+public class PumpkinFestivalBlackBoxTest {
     PumpkinFestival el = new PumpkinFestival();
 
     @Test
